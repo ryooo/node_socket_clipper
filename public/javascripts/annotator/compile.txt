@@ -1,0 +1,1 @@
+coffee -b -cj base.js extensions.coffee console.coffee class.coffee range.coffee annotator.coffee widget.coffee editor.coffee viewer.coffee notification.coffee

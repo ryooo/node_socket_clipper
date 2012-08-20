@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel='stylesheet' href='/stylesheets/annotator.css'>
+<script type="text/javascript" src="/javascripts/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/javascripts/annotator/base.js"></script>
+
+</head>
+<body>
+接続してから5秒間隔で文字が表示される<br>
+接続してから5秒間隔で文字が表示される<br>
+接続してから5秒間隔で文字が表示される<br>
+接続してから5秒間隔で文字が表示される<br>
+接続してから5秒間隔で文字が表示される<br>
+接続してから5秒間隔で文字が表示される<br>
+接続してから5秒間隔で文字が表示される<br>
+接続してから5秒間隔で文字が表示される<br>
+接続してから5秒間隔で文字が表示される<br>
+<dl id="receiveMsg"></dl>
+</body>
+<script>
+annot = $(document.body).annotator()
+annot.annotator('addPlugin', 'Store', {
+  prefix: 'http://localhost:3000/messages',
+  annotationData: {'uri': document.URL},
+  loadFromSearch: {'limit': 20,'uri': document.URL}
+});
+</script>
+</html>
